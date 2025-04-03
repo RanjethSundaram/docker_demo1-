@@ -5,7 +5,7 @@ pipeline {
       steps {
         git(url: 'https://github.com/RanjethSundaram/docker_demo1-', branch: 'master', credentialsId: 'github')
         sh '''docker build -t ranjethsundaram/devops_demo1:latest
-'''
+.'''
       }
     }
 
@@ -13,7 +13,7 @@ pipeline {
       parallel {
         stage('devDeploy') {
           steps {
-            sh 'docker push ranjethsundaram/devops_demo1:latest .'
+            sh 'docker push ranjethsundaram/devops_demo1:latest'
           }
         }
 
