@@ -13,7 +13,7 @@ pipeline {
       parallel {
         stage('devDeploy') {
           steps {
-            sh 'docker push ranjethsundaram/devops_demo1:latest'
+            sh 'docker push ranjethsundaram/devops_demo1:latest .'
           }
         }
 
