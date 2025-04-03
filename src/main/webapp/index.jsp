@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>J2EE Webapp Demo!!!!</h2>
+<h2>i configured for webhook</h2>
 </body>
 </html>
